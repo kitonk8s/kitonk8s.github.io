@@ -1,81 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kit on K8s</title>
-  <meta name="description" content="Kubernetes thoughts, experiments, and operator musings from Kit." />
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #f9fafb;
-      color: #1f2937;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background-color: #1e40af;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    main {
-      flex: 1;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e5e7eb;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Kit on K8s</h1>
-    <p>A technical blog about Kubernetes, cloud networking, and platform engineering</p>
-  </header>
-  <main>
-    <h2>Welcome!</h2>
-    <p>
-      I'm Kit, and this site is where I document Kubernetes experiments, operator patterns, and infrastructure challenges
-      from working on one of the world’s largest OpenShift deployments.
-    </p>
-    <p>
-      Expect posts on topics like:
-    </p>
+
+  <head>
+    <title>Kit on K8s</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #16AA9D;
+        }
+    </style>
+
+
+  </head>
+
+  <body>
+
     <ul>
-      <li>eBPF and networking internals</li>
-      <li>Operator SDK patterns</li>
-      <li>Scaling OpenShift at global scale</li>
-      <li>Architecture critiques and platform strategy</li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
     </ul>
-    <p>
-      Follow along or get in touch via <a href="https://www.linkedin.com/in/YOUR_HANDLE_HERE" target="_blank">LinkedIn</a>.
-    </p>
-  </main>
-  <footer>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      <div class="img-container"<figure style="float:right; padding-right: 5px;"><img style="float:right;width:200px;height:200x;" src="/assets/images/network-rack.jpg" ></figure></div>
+        <header class="inner">
+
+          
+          <h1 id="project_title">Kit on K8s</h1>
+          <h2 id="project_tagline">A technical blog about Kubernetes, cloud networking, and platform engineering</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>Welcome to Kit on K8s</p>
+        <p>I'm Kit, and this site is where I document Kubernetes experiments, operator patterns, and infrastructure challenges from working on one of the world’s largest OpenShift deployments.</p>
+        <p>
+            Expect posts on topics like:
+        </p>
+        <ul>
+            <li>Operator SDK patterns</li>
+            <li>Scaling OpenShift at global scale</li>
+            <li>Architecture critiques and platform strategy</li>
+        </ul>
+        <p>
+        <p>In my day job, I mainly specialize in cloud architecture and automation for millions of compute instances across 40,000+ servers in dozens of countries around the world. I sling Golang code and DevOps knowledge to make the clusters more and scalable for our customers.</p>
+        <p>Feel free to check out my tutorials in the <a href="tutorials.html">Tutorials</a> section of the navigation bar above, and reach out to me on one of the social media platforms linked in <a href="contact.html">Contact</a>. I hope you enjoy your time here, and happy coding!</p>
+      </section>
+    </div>
+    <footer>
     &copy; 2025 Kit on K8s. Built with coffee, code, and some good YAML.
   </footer>
-</body>
+
+  </body>
 </html>
